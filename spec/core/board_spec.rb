@@ -6,5 +6,6 @@ describe Board do
       board = Board.new()
       expect(board.to_play).to eq(GameConstants::Board::WHITE)
     end
+    
   end
 end
