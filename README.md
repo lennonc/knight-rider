@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/lennonc/knight-rider.svg?branch=master)](https://travis-ci.org/lennonc/knight-rider)
+ [![Travis](https://travis-ci.org/lennonc/knight-rider.svg?branch=master)](https://travis-ci.org/lennonc/knight-rider) [![Code Climate](https://codeclimate.com/github/lennonc/knight-rider/badges/gpa.svg)](https://codeclimate.com/github/lennonc/knight-rider) [![Test Coverage](https://codeclimate.com/github/lennonc/knight-rider/badges/coverage.svg)](https://codeclimate.com/github/lennonc/knight-rider/coverage)
