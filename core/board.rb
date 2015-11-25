@@ -1,4 +1,4 @@
-require_relative "game_constants.rb"
+require_relative "../common/game_constants.rb"
 
 include GameConstants::Board
 

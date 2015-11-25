@@ -2,9 +2,11 @@ require_relative "../../core/board.rb"
 
 describe Board do
   describe 'initialize' do
-    it 'should create a board with white to play' do
+    it 'Starts a new game with white to play' do
       board = Board.new()
-      expect(board.to_play).to be(0)
+      expect(board.to_play).to be(GameConstants::Board::WHITE)
     end
+
+    
   end
 end
