@@ -1,3 +1,5 @@
+require_relative "game_constants.rb"
+
 include GameConstants::Board
 
 class Board
