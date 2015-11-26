@@ -1,7 +1,5 @@
 require_relative "../common/game_constants.rb"
 
-include GameConstants::Board
-
 class Board
   attr_reader :to_play
 
@@ -12,6 +10,6 @@ class Board
   private
 
   def setup_board
-    @to_play = WHITE
+    @to_play = GameConstants::Piece::WHITE
   end
 end

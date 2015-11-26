@@ -1,23 +1,25 @@
 require_relative "../common/game_constants.rb"
 
+include GameConstants::Piece
+
 class Piece
   def initialize(piece_type, color)
-    self.piece_type = piece_type
-    self.color = color
+    @piece_type = piece_type
+    @color = color
   end
 
   def symbol
-    if self.color = GameConstants::PIECE::WHITE
-      GameConstants::PIECE::TYPE[self.piece_type - 1].upcase
+    if @color == WHITE
+      SYMBOLS[@piece_type].upcase
     else
-      GameConstants::PIECE::TYPE[self.piece_type - 1]
+      SYMBOLS[@piece_type]
     end
   end
 
-  def unicode_symbol(invert_color=false)
-    unless invert_color
-      return GameConstants::PIECE::UNICODE_SYMBOLS[self.piece_type - 1]
+  def unicode_symbol
+    if @color == BLACK
+      return UNICODE_SYMBOLS[symbol.downcase]
     end
-    GameConstants::PIECE::UNICODE_SYMBOLS[self.piece_type - 1].swapcase
+    UNICODE_SYMBOLS[symbol.upcase]
   end
 end
