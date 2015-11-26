@@ -17,9 +17,6 @@ class Piece
   end
 
   def unicode_symbol
-    if @color == BLACK
-      return UNICODE_SYMBOLS[symbol.downcase]
-    end
-    UNICODE_SYMBOLS[symbol.upcase]
+    @color == BLACK ? UNICODE_SYMBOLS[symbol.downcase] : UNICODE_SYMBOLS[symbol.upcase]
   end
 end
