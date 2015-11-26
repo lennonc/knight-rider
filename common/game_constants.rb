@@ -13,7 +13,33 @@ module GameConstants
 
     FILES = %w(a b c d e f g h)
     RANKS = %w(1 2 3 4 5 6 7 8)
+  end
 
+  module Piece
+    PAWN = 1
+    KNIGHT = 2
+    BISHOP = 3
+    ROOK = 4
+    QUEEN = 5
+    KING = 6
+
+    SYMBOLS = ["", "p", "n", "b", "r", "q", "k"]
+    TYPES = [PAWN, KNIGHT, BISHOP, ROOK, QUEEN, KING]
     WHITE, BLACK = 0, 1
+
+    UNICODE_SYMBOLS = {
+      "R" => "♖",
+      "r" => "♜",
+      "N" => "♘",
+      "n" => "♞",
+      "B" => "♗",
+      "b" => "♝",
+      "Q" => "♕",
+      "q" => "♛",
+      "K" => "♔",
+      "k" => "♚",
+      "P" => "♙",
+      "p" => "♟",
+    }
   end
 end
