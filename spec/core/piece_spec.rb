@@ -4,7 +4,7 @@ include GameConstants::Piece
 
 describe Piece do
   describe 'initialize' do
-    before (:each) do
+    before :each do
       @piece = Piece.new(PAWN, WHITE)
     end
 
