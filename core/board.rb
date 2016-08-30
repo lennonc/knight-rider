@@ -7,6 +7,14 @@ class Board
     setup_board
   end
 
+  def file_index(square)
+    square & 7
+  end
+
+  def rank_index(square)
+    square >> 3
+  end
+
   private
 
   def setup_board
