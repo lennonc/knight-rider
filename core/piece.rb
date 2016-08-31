@@ -16,6 +16,14 @@ class Piece
     end
   end
 
+  def piece_type
+    @piece_type
+  end
+
+  def color
+    @color
+  end
+
   def ==(other)
     begin
       @piece_type == other.piece_type && @color == other.color
