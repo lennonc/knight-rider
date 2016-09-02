@@ -15,7 +15,6 @@ describe Piece do
     it 'should check piece equality' do
       piece_1 = Piece.new(PAWN, WHITE)
       piece_2 = Piece.new(PAWN, WHITE)
-
       expect(piece_1 == piece_2).to be_truthy
     end
 
